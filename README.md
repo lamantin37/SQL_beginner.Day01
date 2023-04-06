@@ -50,8 +50,8 @@ There are the next set operators in PostgreSQL.
 
 Keyword “ALL” means to save duplicates of rows in the result.
 The main rules to work with sets are below
-- The main SQL provides a final names of attributes for whole query
-- The attributes of controlled SQL should satisfied number of columns and corresponding family types of main SQL
+- The main SQL provides final names of attributes for whole query
+- The attributes of controlled SQL should satisfy number of columns and corresponding family types of main SQL
 
 ![D01_02](misc/images/D01_02.png)
 
@@ -307,7 +307,8 @@ Please write 2 SQL statements which return a list of pizzerias names which have 
 | **Allowed**                               |                                                                                                                          |
 | Language                        | ANSI SQL                                                                                              |
 
-Please write a SQL statement which returns a list of the person names which made an order for pizza in the corresponding pizzeria. The sample result (with named columns) is provided below and yes ... please make ordering by 3 columns in ascending mode.
+Please write a SQL statement which returns a list of the person names which made an order for pizza in the corresponding pizzeria. 
+The sample result (with named columns) is provided below and yes ... please make ordering by 3 columns (`person_name`, `pizza_name`, `pizzeria_name`) in ascending mode.
 
 | person_name | pizza_name | pizzeria_name | 
 | ------ | ------ | ------ |
